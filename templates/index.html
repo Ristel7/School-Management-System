@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu International School</title>
+
+    <style>
+        /* ---------------- GLOBAL ---------------- */
+        :root {
+            --primary: #005461;
+            --teal: #018790;
+            --accent: #00B7B5;
+            --light: #F4F4F4;
+            --card: #fff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #E7F9FF 0%, #F4FFFF 100%);
+            overflow-x: hidden;
+        }
+
+        /* ---------------- NAVBAR ---------------- */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: #ffffffd9;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav .brand {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 20px;
+            color: #004247;
+        }
+
+        .cta {
+            background: var(--accent);
+            padding: 10px 20px;
+            border-radius: 40px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* ---------------- HERO ---------------- */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 50px 6vw;
+        }
+
+        .hero-text h1 {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            color: #444;
+            font-size: 17px;
+            max-width: 450px;
+        }
+
+        .hero-img {
+            background: white;
+            padding: 14px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .hero-img img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        /* ---------------- INFO CARDS ---------------- */
+        .info-row {
+            display: flex;
+            gap: 20px;
+            padding: 20px 6vw;
+        }
+
+        .info-card {
+            background: var(--card);
+            flex: 1;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .info-card h3 {
+            color: var(--teal);
+            margin: 0;
+        }
+
+        /* ---------------- MAIN GRID ---------------- */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 25px;
+            padding: 0 6vw 60px;
+        }
+
+        /* Cards */
+        .panel {
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: var(--teal);
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Principal Section */
+        .principal {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .principal img {
+            width: 90px;
+            height: 90px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 30px 6vw;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="brand">Priyanshu International School</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#gallery">Gallery</a>
+            <a href="/login">Login</a>
+            <button class="cta">Admissions</button>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>Welcome to Priyanshu International School</h1>
+            <p>A joyful place where students grow, explore and reach their full potential.</p>
+            <button class="cta">Apply for Admission</button>
+        </div>
+
+        <!-- ⭐ MAIN HERO IMAGE ⭐ -->
+        <div class="hero-img">
+            <!-- Replace this with your real hero image placed inside /Images/ -->
+            <img src="Images/9760493.jpg" alt="School Hero Image">
+        </div>
+
+    </section>
+
+
+    <!-- INFO CARDS -->
+    <section class="info-row">
+        <div class="info-card">
+            <h3>Academics</h3>
+            <p>Strong curriculum</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Care</h3>
+            <p>Safe environment</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Activities</h3>
+            <p>Sports & Events</p>
+        </div>
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-grid" id="programs">
+
+        <!-- LEFT SECTION -->
+        <section class="panel">
+            <h2>My Subjects</h2>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Teacher</th>
+                </tr>
+                <tr>
+                    <td>Mathematics</td>
+                    <td>Mr. Sharma</td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td>Mrs. Verma</td>
+                </tr>
+                <tr>
+                    <td>Chemistry</td>
+                    <td>Mr. Khan</td>
+                </tr>
+            </table>
+
+            <h2 style="margin-top:20px;">Homework</h2>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Due</th>
+                </tr>
+                <tr>
+                    <td>Maths</td>
+                    <td>Tomorrow</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Friday</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="panel">
+            <h2>Gallery</h2>
+
+            <div class="gallery-grid" id="gallery">
+
+                <!-- ⭐ GALLERY IMAGES ⭐ -->
+                <img src="/Images/g1.jpg" alt="">
+                <img src="/Images/g2.jpg" alt="">
+                <img src="/Images/g3.jpg" alt="">
+
+            </div>
+
+            <h2 style="margin-top:20px;">Principal's Message</h2>
+
+            <div class="principal">
+                <img src="/Images/principal.jpg" alt="Principal">
+                <div>
+                    <strong>Dr. Priya Raj</strong>
+                    <p style="font-size:14px; color:#333;">
+                        Welcome to PIS — where every student is encouraged to grow with confidence
+                        and curiosity.
+                    </p>
+                </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <strong>Priyanshu International School</strong><br>
+        123 School Avenue — +91 99999 88888
+    </footer>
+
+
+</body>
+
+</html>
