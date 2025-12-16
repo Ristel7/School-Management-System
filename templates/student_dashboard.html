@@ -4,3 +4,194 @@
         <meta charset="UTF-8">
         <title>Student Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                font-family: "Segoe UI", sans-serif;
+                background: #f4f4f4;
+            }
+        
+            /* ===== TOP NAV ===== */
+            .topbar {
+                background: linear-gradient(135deg, #005461, #018790);
+                color: white;
+                padding: 14px 30px;
+                font-size: 18px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            .nav-links {
+                display: flex;
+                gap: 25px;
+            }
+        
+            .nav-links span {
+                cursor: pointer;
+            }
+        
+            .profile-text {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        
+            /* ===== MAIN RESPONSIVE LAYOUT ===== */
+            .main-layout {
+                display: grid;
+                grid-template-columns: 280px 1fr;
+                gap: 22px;
+                padding: 22px;
+            }
+        
+            /* ===== STATS LEFT ===== */
+            .stats {
+                display: grid;
+                gap: 20px;
+            }
+        
+            .stat-box {
+                background: #005461;
+                color: white;
+                padding: 28px;
+                border-radius: 22px;
+                font-size: 19px;
+                font-weight: 600;
+            }
+        
+            .stat-box span {
+                display: block;
+                margin-top: 6px;
+                font-size: 34px;
+            }
+        
+            .stat-box.blue {
+                background: #018790;
+            }
+        
+            .stat-box.cyan {
+                background: #00b7b5;
+            }
+        
+            /* ===== RIGHT PANEL ===== */
+            .right-panel {
+                background: white;
+                border-radius: 22px;
+                padding: 20px;
+            }
+        
+            /* ===== BUTTON BAR ===== */
+            .button-bar {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+        
+            .action-btn {
+                background: #018790;
+                color: white;
+                border: none;
+                padding: 12px 0;
+                font-size: 15px;
+                font-weight: 600;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: 0.2s;
+                width: 100%;
+                height: 48px;
+                /* FIXED BUTTON HEIGHT */
+            }
+        
+            .action-btn:hover {
+                background: #00b7b5;
+                transform: translateY(-2px);
+            }
+        
+            .logout-btn {
+                background: #005461 !important;
+            }
+        
+            .logout-btn:hover {
+                background: #018790 !important;
+            }
+        
+            /* ===== CONTENT GRID ===== */
+            .content-grid {
+                display: grid;
+                grid-template-columns: 1.3fr 0.7fr;
+                gap: 18px;
+            }
+        
+            .card {
+                background: #f4f4f4;
+                border-radius: 18px;
+                padding: 16px;
+            }
+        
+            .card h2 {
+                margin-bottom: 10px;
+                color: #005461;
+            }
+        
+            /* ===== TABLE ===== */
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background: white;
+                font-size: 15px;
+            }
+        
+            th {
+                background: #018790;
+                color: white;
+                padding: 9px;
+                text-align: left;
+            }
+        
+            td {
+                padding: 9px;
+                border-bottom: 1px solid #ddd;
+            }
+        
+            /* ===== RESPONSIVENESS ===== */
+            @media (max-width: 950px) {
+                .main-layout {
+                    grid-template-columns: 1fr;
+                }
+        
+                .button-bar {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+        
+                .content-grid {
+                    grid-template-columns: 1fr;
+                }
+        
+                .topbar {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 8px;
+                }
+        
+                .nav-links {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        
+            @media (max-width: 600px) {
+                .button-bar {
+                    grid-template-columns: 1fr;
+                }
+        
+                .stat-box {
+                    font-size: 17px;
+                }
+        
+                .stat-box span {
+                    font-size: 28px;
+                }
+            }
+        </style>
+        </head>
