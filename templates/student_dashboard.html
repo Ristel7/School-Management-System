@@ -195,3 +195,141 @@
             }
         </style>
         </head>
+        <body>
+        
+            <!-- ===== TOPBAR ===== -->
+            <div class="topbar">
+                <div class="nav-links">
+                    <span>Dashboard</span>
+                    <span>Subjects</span>
+                    <span>Attendance</span>
+                    <span>Results</span>
+                    <span>Fees</span>
+                    <span>Notices</span>
+                </div>
+        
+                <div class="profile-text">Student</div>
+            </div>
+        
+            <!-- ===== MAIN BODY ===== -->
+            <div class="main-layout">
+        
+                <!-- LEFT -->
+                <div class="stats">
+                    <div class="stat-box">Class <span>12</span></div>
+                    <div class="stat-box blue">Attendance <span>92%</span></div>
+                    <div class="stat-box cyan">Subjects <span>6</span></div>
+                </div>
+        
+                <!-- RIGHT -->
+                <div class="right-panel">
+        
+                    <!-- BUTTON ROW -->
+                    <div class="button-bar">
+                        <button class="action-btn">Profile</button>
+                        <button class="action-btn">ID Card</button>
+                        <button class="action-btn">Timetable</button>
+                        <button class="action-btn">Syllabus</button>
+        
+                        <!-- FIXED LOGOUT BUTTON -->
+                        <button class="action-btn logout-btn" onclick="window.location.href='/logout'">Logout</button>
+        
+                        <button class="action-btn">Leave</button>
+                        <button class="action-btn">Transport</button>
+                        <button class="action-btn">Library</button>
+                    </div>
+        
+                    <!-- CONTENT GRID -->
+                    <div class="content-grid">
+        
+                        <!-- LEFT CONTENT -->
+                        <div class="card">
+                            <h2>My Subjects</h2>
+                            <table>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Teacher</th>
+                                </tr>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>Mr. Sharma</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>Mrs. Verma</td>
+                                </tr>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>Mr. Khan</td>
+                                </tr>
+                            </table>
+        
+                            <h2 style="margin-top:15px;">Homework</h2>
+                            <table>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Due</th>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>Tomorrow</td>
+                                </tr>
+                                <tr>
+                                    <td>Science</td>
+                                    <td>Friday</td>
+                                </tr>
+                            </table>
+                        </div>
+        
+                        <!-- RIGHT CONTENT -->
+                        <div class="card">
+                            <h2>Latest Result</h2>
+                            <table>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Marks</th>
+                                </tr>
+                                <tr>
+                                    <td>Maths</td>
+                                    <td>88</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>82</td>
+                                </tr>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>79</td>
+                                </tr>
+                            </table>
+        
+                            <h2 style="margin-top:15px;">Fee History</h2>
+                            <table>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Paid</td>
+                                </tr>
+                                <tr>
+                                    <td>August</td>
+                                    <td>Paid</td>
+                                </tr>
+                                <tr>
+                                    <td>September</td>
+                                    <td style="color:red;">Pending</td>
+                                </tr>
+                            </table>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </body>
+        
+        </html>
