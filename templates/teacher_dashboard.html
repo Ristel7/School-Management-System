@@ -5,172 +5,177 @@
     <meta charset="UTF-8">
     <title>Teacher Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-    body {
-        margin: 0;
-        font-family: "Segoe UI", sans-serif;
-        background: linear-gradient(135deg,
-                rgba(124, 58, 237, 0.10),
-                rgba(37, 99, 235, 0.10));
-    }
 
-    .layout {
-        display: flex;
-        min-height: 100vh;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg,
+                    rgba(124, 58, 237, 0.10),
+                    rgba(37, 99, 235, 0.10));
+        }
 
-    /* ===== SIDEBAR ===== */
-    .sidebar {
-        width: 240px;
-        background: white;
-        padding: 25px 15px;
-        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.05);
-    }
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
 
-    .logo {
-        font-size: 22px;
-        font-weight: bold;
-        color: #7c3aed;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            width: 240px;
+            background: white;
+            padding: 25px 15px;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.05);
+        }
 
-    .menu a {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 14px;
-        margin-bottom: 8px;
-        border-radius: 10px;
-        text-decoration: none;
-        color: #374151;
-        font-size: 15px;
-    }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #7c3aed;
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
-    .menu a:hover,
-    .menu a.active {
-        background: #ede9fe;
-        color: #7c3aed;
-        font-weight: 600;
-    }
+        .menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 14px;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #374151;
+            font-size: 15px;
+        }
 
-    .logout {
-        margin-top: 30px;
-        color: red;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-    }
+        .menu a:hover,
+        .menu a.active {
+            background: #ede9fe;
+            color: #7c3aed;
+            font-weight: 600;
+        }
 
-    /* ===== MAIN CONTENT ===== */
-    .main {
-        flex: 1;
-        padding: 30px;
-    }
+        .logout {
+            margin-top: 30px;
+            color: red;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
 
-    .topbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 25px;
-    }
+        /* ===== MAIN CONTENT ===== */
+        .main {
+            flex: 1;
+            padding: 30px;
+        }
 
-    .teacher-profile {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: 600;
-    }
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
 
-    .teacher-profile img {
-        width: 38px;
-        border-radius: 50%;
-    }
+        .teacher-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
 
-    /* ===== CARDS ===== */
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        margin-bottom: 30px;
-    }
+        .teacher-profile img {
+            width: 38px;
+            border-radius: 50%;
+        }
 
-    .card {
-        padding: 22px;
-        border-radius: 18px;
-        color: white;
-        font-weight: 600;
-        font-size: 16px;
-    }
+        /* ===== CARDS ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
 
-    .purple {
-        background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-    }
+        .card {
+            padding: 22px;
+            border-radius: 18px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+        }
 
-    .blue {
-        background: linear-gradient(135deg, #3b82f6, #2563eb);
-    }
+        .purple {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
 
-    .orange {
-        background: linear-gradient(135deg, #fb923c, #f97316);
-    }
+        .blue {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+        }
 
-    .green {
-        background: linear-gradient(135deg, #22c55e, #16a34a);
-    }
+        .orange {
+            background: linear-gradient(135deg, #fb923c, #f97316);
+        }
 
-    .card span {
-        display: block;
-        font-size: 26px;
-        margin-top: 8px;
-    }
+        .green {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+        }
 
-    /* ===== TABLE BOX ===== */
-    .table-box {
-        background: white;
-        padding: 22px;
-        border-radius: 18px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        margin-bottom: 25px;
-    }
+        .card span {
+            display: block;
+            font-size: 26px;
+            margin-top: 8px;
+        }
 
-    .table-box h2 {
-        margin-bottom: 16px;
-        color: #2563eb;
-    }
+        /* ===== TABLE BOX ===== */
+        .table-box {
+            background: white;
+            padding: 22px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+        .table-box h2 {
+            margin-bottom: 16px;
+            color: #2563eb;
+        }
 
-    th {
-        background: #2563eb;
-        color: white;
-        padding: 12px;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-    td {
-        padding: 12px;
-        border-bottom: 1px solid #e5e7eb;
-    }
+        th {
+            background: #2563eb;
+            color: white;
+            padding: 12px;
+        }
 
-    tr:hover {
-        background: #f1f5ff;
-    }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
 
-    .two-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-</style>
+        tr:hover {
+            background: #f1f5ff;
+        }
+
+        .two-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+    </style>
 </head>
 
 <body>
+
     <div class="layout">
+
+        <!-- ===== SIDEBAR ===== -->
         <div class="sidebar">
             <div class="logo">PIS</div>
+
             <div class="menu">
                 <a href="#" class="active"><i class="fa-solid fa-house"></i> Dashboard</a>
                 <a href="#"><i class="fa-solid fa-users"></i> My Students</a>
@@ -178,60 +183,102 @@
                 <a href="#"><i class="fa-solid fa-file-lines"></i> Results</a>
                 <a href="#"><i class="fa-solid fa-book"></i> Subjects</a>
                 <a href="#"><i class="fa-solid fa-bell"></i> Notices</a>
-            
+
                 <a href="/logout" class="logout">
                     <i class="fa-solid fa-right-from-bracket"></i> Logout
                 </a>
             </div>
-            <!-- ===== MAIN CONTENT ===== -->
-            <div class="main">
-            
-                <!-- TOP BAR -->
-                <div class="topbar">
-                    <h2>Teacher Dashboard</h2>
-            
-                    <div class="teacher-profile">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-                        Teacher
-                    </div>
+        </div>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <div class="main">
+
+            <!-- TOP BAR -->
+            <div class="topbar">
+                <h2>Teacher Dashboard</h2>
+
+                <div class="teacher-profile">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+                    Teacher
                 </div>
-                <!-- SUMMARY CARDS -->
-                <div class="cards">
-                    <div class="card purple">
-                        My Classes
-                        <span>4</span>
-                    </div>
-                
-                    <div class="card blue">
-                        My Students
-                        <span>120</span>
-                    </div>
-                
-                    <div class="card orange">
-                        Attendance Today
-                        <span>95%</span>
-                    </div>
-                    <div class="card green">
-                        Salary
-                        <span>₹ 35,000</span>
-                    </div>
-                    </div>
+            </div>
 
-                    <!-- LOWER SECTION -->
-                    <div class="two-box">
-                    
-                        <!-- CLASS LIST -->
-                        <div class="table-box">
-                            <h2>My Classes</h2>
-                            <table>
-                                <tr>
-                                    <th>Class</th>
-                                    <th>Subject</th>
-                                </tr>
+            <!-- SUMMARY CARDS -->
+            <div class="cards">
+                <div class="card purple">
+                    My Classes
+                    <span>4</span>
+                </div>
 
+                <div class="card blue">
+                    My Students
+                    <span>120</span>
+                </div>
+
+                <div class="card orange">
+                    Attendance Today
+                    <span>95%</span>
+                </div>
+
+                <div class="card green">
+                    Salary
+                    <span>₹ 35,000</span>
+                </div>
+            </div>
+
+            <!-- LOWER SECTION -->
+            <div class="two-box">
+
+                <!-- CLASS LIST -->
+                <div class="table-box">
+                    <h2>My Classes</h2>
+                    <table>
+                        <tr>
+                            <th>Class</th>
+                            <th>Subject</th>
+                        </tr>
+
+                        <tr>
+                            <td>10-A</td>
+                            <td>Mathematics</td>
+                        </tr>
+                        <tr>
+                            <td>10-B</td>
+                            <td>Mathematics</td>
+                        </tr>
+                        <tr>
+                            <td>9-A</td>
+                            <td>Mathematics</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- NOTICE BOARD -->
+                <div class="table-box">
+                    <h2>Notices</h2>
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Message</th>
+                        </tr>
+
+                        <tr>
+                            <td>12 Dec</td>
+                            <td>Submit exam results by Friday</td>
+                        </tr>
+                        <tr>
+                            <td>15 Dec</td>
+                            <td>PTM scheduled on Saturday</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
 
         </div>
 
     </div>
+
 </body>
 
+</html>
