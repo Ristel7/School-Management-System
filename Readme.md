@@ -7,11 +7,7 @@ The system provides separate dashboards for Admin, Students, and Teachers, enabl
 👨‍💼 Admin Module
 
 Admin dashboard with statistics
-
 Add / View / Delete Students
-
 Add / View / Delete Teachers
-
 Manage subjects (future scope)
-
 Central control over the system
