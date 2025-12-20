@@ -51,3 +51,11 @@ Principal’s message
 Admission enquiry popup
 
 Login page
+
+| Layer           | Technology            |
+| --------------- | --------------------- |
+| Backend         | Flask (Python)        |
+| Frontend        | HTML, CSS, JavaScript |
+| Database        | MySQL                 |
+| Styling         | Custom CSS            |
+| Version Control | Git & GitHub          |
