@@ -59,3 +59,26 @@ Login page
 | Database        | MySQL                 |
 | Styling         | Custom CSS            |
 | Version Control | Git & GitHub          |
+
+
+SCHOOL/
+│
+├── app.py
+├── .gitignore
+├── README.md
+│
+├── Images/
+│   └── 9760493.jpg
+│
+├── templates/
+│   ├── index.html
+│   ├── login.html
+│   ├── admin_dashboard.html
+│   ├── student_dashboard.html
+│   ├── teacher_dashboard.html
+│   ├── add_student.html
+│   ├── add_teacher.html
+│   ├── view_students.html
+│   └── view_teachers.html
+│
+└── .venv/
