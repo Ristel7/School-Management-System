@@ -1,19 +1,4 @@
-# School Management System
+🎓 School Management System
 
-A school ERP-style web application built using:
-
-- HTML, CSS, JavaScript
-- Python (Flask)
-- MySQL (planned backend)
-
-## Features
-
-- School landing page
-- Admin dashboard
-- Student dashboard
-- Teacher dashboard
-- Authentication system
-- Admission enquiry form
-
-## Project Structure
-
+A full-stack School Management System (ERP) built using Flask, HTML, CSS, JavaScript, and MySQL.
+The system provides separate dashboards for Admin, Students, and Teachers, enabling efficient academic and administrative management.
