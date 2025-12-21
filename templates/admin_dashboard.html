@@ -5,3 +5,177 @@
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <style>
+            body {
+                margin: 0;
+                font-family: "Segoe UI", sans-serif;
+                background: linear-gradient(135deg,
+                        rgba(124, 58, 237, 0.10),
+                        rgba(37, 99, 235, 0.10));
+            }
+        
+            .layout {
+                display: flex;
+                min-height: 100vh;
+            }
+        
+            /* ===== SIDEBAR ===== */
+            .sidebar {
+                width: 240px;
+                background: white;
+                padding: 25px 15px;
+                box-shadow: 5px 0 15px rgba(0, 0, 0, 0.05);
+            }
+        
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+                color: #7c3aed;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        
+            .menu a {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px 14px;
+                margin-bottom: 8px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: #374151;
+                font-size: 15px;
+            }
+        
+            .menu a:hover,
+            .menu a.active {
+                background: #ede9fe;
+                color: #7c3aed;
+                font-weight: 600;
+            }
+        
+            .fake {
+                opacity: 0.7;
+                cursor: not-allowed;
+            }
+        
+            .logout {
+                margin-top: 30px;
+                color: red;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+        
+            /* ===== MAIN CONTENT ===== */
+            .main {
+                flex: 1;
+                padding: 30px;
+            }
+        
+            .topbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+        
+            .search-box input {
+                width: 260px;
+                padding: 10px 14px;
+                border-radius: 12px;
+                border: 1px solid #ddd;
+            }
+        
+            .admin-profile {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: 600;
+            }
+        
+            .admin-profile img {
+                width: 38px;
+                border-radius: 50%;
+            }
+        
+            /* ===== CARDS ===== */
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+        
+            .card {
+                padding: 22px;
+                border-radius: 18px;
+                color: white;
+                font-weight: 600;
+                font-size: 17px;
+            }
+        
+            .purple {
+                background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            }
+        
+            .blue {
+                background: linear-gradient(135deg, #3b82f6, #2563eb);
+            }
+        
+            .orange {
+                background: linear-gradient(135deg, #fb923c, #f97316);
+            }
+        
+            .green {
+                background: linear-gradient(135deg, #22c55e, #16a34a);
+            }
+        
+            .card span {
+                display: block;
+                font-size: 28px;
+                margin-top: 8px;
+            }
+        
+            /* ===== TABLE ===== */
+            .table-box {
+                background: white;
+                padding: 22px;
+                border-radius: 18px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                margin-bottom: 30px;
+            }
+        
+            .table-box h2 {
+                margin-bottom: 16px;
+                color: #2563eb;
+            }
+        
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+        
+            th {
+                background: #2563eb;
+                color: white;
+                padding: 12px;
+            }
+        
+            td {
+                padding: 12px;
+                border-bottom: 1px solid #e5e7eb;
+            }
+        
+            tr:hover {
+                background: #f1f5ff;
+            }
+        
+            .two-tables {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+            }
+        </style>
+        </head>
