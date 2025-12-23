@@ -80,3 +80,51 @@
         }
     </style>
 </head>
+
+<body>
+
+    <div class="box">
+
+        <h2>All Teachers</h2>
+
+        <div class="top-actions">
+            <a href="/admin/teachers/add">
+                <button class="action-btn delete">+ Add Teacher</button>
+            </a>
+        </div>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+
+            {% for teacher in teachers %}
+            <tr>
+                <td>{{ teacher.id }}</td>
+                <td>{{ teacher.name }}</td>
+                <td>{{ teacher.subject }}</td>
+                <td>{{ teacher.phone }}</td>
+                <td>
+                    <a href="/admin/teachers/delete/{{ teacher.id }}"
+                        onclick="return confirm('Are you sure you want to delete this teacher?')">
+                        <button class="action-btn delete">Delete</button>
+                    </a>
+
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <div class="back">
+            <a href="/admin/dashboard">← Back to Dashboard</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
