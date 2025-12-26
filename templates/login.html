@@ -178,8 +178,28 @@
                 margin-top: 30px;
             }
         }
+
+        .home-btn {
+  padding: 10px 18px;
+  background: #c50900;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  opacity: 0.9;
+}
+
     </style>
 </head>
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+</script>
 
 <body>
 
@@ -199,6 +219,7 @@
                 Powered by Priyanshu International School
             </div>
         </div>
+        <button class="home-btn" onclick="goHome()">Home</button>
 
         <!-- RIGHT LOGIN PANEL -->
         <div class="right-panel">
