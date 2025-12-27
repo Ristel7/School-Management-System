@@ -151,7 +151,6 @@ def add_student():
     return render_template("add_student.html")
 
 
-
 # ---------------- ADD TEACHER ----------------
 
 
@@ -218,6 +217,8 @@ def delete_teacher(id):
     return redirect("/admin/teachers")
 
 # ---------------- VIEW STUDENTS ----------------
+
+
 @app.route("/admin/students")
 def view_students():
     if "role" not in session or session["role"] != "admin":
