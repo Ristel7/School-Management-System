@@ -33,25 +33,6 @@
             box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
         }
 
-        /* HOME BUTTON */
-        .home-btn {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            padding: 10px 18px;
-            background: #c50900;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        .home-btn:hover {
-            opacity: 0.9;
-        }
-
         /* LEFT PANEL */
         .left-panel {
             width: 50%;
@@ -177,7 +158,36 @@
             text-decoration: none;
         }
 
-        /* RESPONSIVE */
+        /* BOTTOM NAVIGATION BAR */
+        .bottom-nav {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, #ff6a3d, #7c2ae8);
+            padding: 12px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .bottom-nav button {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            padding: 4px 22px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .bottom-nav button:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
         @media (max-width: 900px) {
             .login-container {
                 flex-direction: column;
@@ -190,9 +200,10 @@
                 width: 100%;
             }
 
-            .footer {
-                position: static;
-                margin-top: 30px;
+            .bottom-nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
             }
         }
     </style>
@@ -201,9 +212,6 @@
 <body>
 
     <div class="login-container">
-
-        <!-- HOME BUTTON FIXED -->
-        <button class="home-btn" onclick="goHome()">Home</button>
 
         <!-- LEFT INFO PANEL -->
         <div class="left-panel">
@@ -260,15 +268,19 @@
 
         </div>
 
+        <!-- NEW BOTTOM NAVIGATION BAR -->
+        <div class="bottom-nav">
+            <button onclick="goHome()">← Back to Home</button>
+            <span>Need Help? Contact School Support</span>
+        </div>
+
     </div>
 
-    <!-- FIXED JS: placed at bottom -->
     <script>
         function goHome() {
             window.location.href = "/";
         }
     </script>
-
 
 </body>
 
