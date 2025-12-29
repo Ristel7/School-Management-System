@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Priyanshu International School - Login</title>
+
     <style>
         * {
             margin: 0;
@@ -28,7 +29,27 @@
             display: flex;
             border-radius: 20px;
             overflow: hidden;
+            position: relative;
             box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+        }
+
+        /* HOME BUTTON */
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            padding: 10px 18px;
+            background: #c50900;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            opacity: 0.9;
         }
 
         /* LEFT PANEL */
@@ -63,6 +84,15 @@
             left: 0;
             color: white;
             font-weight: bold;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #e0d7ff;
         }
 
         /* RIGHT PANEL */
@@ -117,11 +147,6 @@
             font-size: 14px;
         }
 
-        .captcha-row {
-            display: flex;
-            gap: 10px;
-        }
-
         .login-btn {
             width: 100%;
             padding: 12px;
@@ -152,15 +177,7 @@
             text-decoration: none;
         }
 
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 12px;
-            color: #c7d2fe;
-        }
-
+        /* RESPONSIVE */
         @media (max-width: 900px) {
             .login-container {
                 flex-direction: column;
@@ -178,32 +195,15 @@
                 margin-top: 30px;
             }
         }
-
-        .home-btn {
-  padding: 10px 18px;
-  background: #c50900;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.home-btn:hover {
-  opacity: 0.9;
-}
-
     </style>
 </head>
-<script>
-    function goHome() {
-        window.location.href = "index.html";
-    }
-</script>
 
 <body>
 
     <div class="login-container">
+
+        <!-- HOME BUTTON FIXED -->
+        <button class="home-btn" onclick="goHome()">Home</button>
 
         <!-- LEFT INFO PANEL -->
         <div class="left-panel">
@@ -219,7 +219,6 @@
                 Powered by Priyanshu International School
             </div>
         </div>
-        <button class="home-btn" onclick="goHome()">Home</button>
 
         <!-- RIGHT LOGIN PANEL -->
         <div class="right-panel">
@@ -262,6 +261,13 @@
         </div>
 
     </div>
+
+    <!-- FIXED JS: placed at bottom -->
+    <script>
+        function goHome() {
+            window.location.href = "index.html";
+        }
+    </script>
 
 </body>
 
