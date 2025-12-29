@@ -215,7 +215,7 @@
         <!-- ⭐ MAIN HERO IMAGE ⭐ -->
         <div class="hero-img">
             <!-- Replace this with your real hero image placed inside /Images/ -->
-            <img src="/Images/Schhol2 Image.png" alt="School Hero Image">
+            <img src="{{ url_for('static', filename='Images/Schhol2 Image.png') }}" alt="School Hero Image">
         </div>
 
     </section>
@@ -289,19 +289,18 @@
             <div class="gallery-grid" id="gallery">
 
                 <!-- ⭐ GALLERY IMAGES ⭐ -->
-                <img src="/Images/School4.png"
-                    alt="no Images">
-                <img src="/Images/School Image.png" alt="No Images">
-                <img src="/Images/School3.png" alt="">
+                <img src="{{ url_for('static', filename='Images/School4.png') }}">
+                <img src="{{ url_for('static', filename='Images/School Image.png') }}">
+                <img src="{{ url_for('static', filename='Images/School3.png') }}">
 
             </div>
 
             <h2 style="margin-top:20px;">Principal's Message</h2>
 
             <div class="principal">
-                <img src="/Images/principal.jpg" alt="Principal">
+                <img src="{{ url_for('static', filename='Images/New Passport.png') }}">
                 <div>
-                    <strong>Dr. Priya Raj</strong>
+                    <strong>Mr. Priyanshu Rajput</strong>
                     <p style="font-size:14px; color:#333;">
                         Welcome to PIS — where every student is encouraged to grow with confidence
                         and curiosity.
