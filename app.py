@@ -18,7 +18,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="****",
-        password="guriya",        # ✅ YOUR MYSQL PASSWORD
+        password="******",        # ✅ YOUR MYSQL PASSWORD
         database="erp"
     )
 
