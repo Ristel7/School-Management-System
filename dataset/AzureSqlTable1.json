@@ -1,0 +1,164 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Attrition",
+				"type": "varchar"
+			},
+			{
+				"name": "BusinessTravel",
+				"type": "varchar"
+			},
+			{
+				"name": "DailyRate",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Department",
+				"type": "varchar"
+			},
+			{
+				"name": "DistanceFromHome",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Education",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EducationField",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeNumber",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EnvironmentSatisfaction",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Gender",
+				"type": "varchar"
+			},
+			{
+				"name": "HourlyRate",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "JobInvolvement",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "JobLevel",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "JobRole",
+				"type": "varchar"
+			},
+			{
+				"name": "JobSatisfaction",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "MaritalStatus",
+				"type": "varchar"
+			},
+			{
+				"name": "MonthlyIncome",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "NumCompaniesWorked",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Over18",
+				"type": "varchar"
+			},
+			{
+				"name": "OverTime",
+				"type": "varchar"
+			},
+			{
+				"name": "PercentSalaryHike",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PerformanceRating",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "StandardHours",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TotalWorkingYears",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TrainingTimesLastYear",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WorkLifeBalance",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "YearsAtCompany",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "YearsInCurrentRole",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "YearsSinceLastPromotion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "YearsWithCurrManager",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "HR"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

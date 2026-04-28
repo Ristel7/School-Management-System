@@ -1,0 +1,15 @@
+{
+	"name": "Priyanshufactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "94019383-691d-4a46-a0fc-295ab0b90760",
+		"tenantId": "734eae8b-2212-4028-ba61-2b9cb51eae0d"
+	}
+}

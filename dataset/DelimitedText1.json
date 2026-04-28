@@ -1,0 +1,149 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "HR.csv",
+				"container": "csvdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Attrition",
+				"type": "String"
+			},
+			{
+				"name": "BusinessTravel",
+				"type": "String"
+			},
+			{
+				"name": "DailyRate",
+				"type": "String"
+			},
+			{
+				"name": "Department",
+				"type": "String"
+			},
+			{
+				"name": "DistanceFromHome",
+				"type": "String"
+			},
+			{
+				"name": "Education",
+				"type": "String"
+			},
+			{
+				"name": "EducationField",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeNumber",
+				"type": "String"
+			},
+			{
+				"name": "EnvironmentSatisfaction",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "HourlyRate",
+				"type": "String"
+			},
+			{
+				"name": "JobInvolvement",
+				"type": "String"
+			},
+			{
+				"name": "JobLevel",
+				"type": "String"
+			},
+			{
+				"name": "JobRole",
+				"type": "String"
+			},
+			{
+				"name": "JobSatisfaction",
+				"type": "String"
+			},
+			{
+				"name": "MaritalStatus",
+				"type": "String"
+			},
+			{
+				"name": "MonthlyIncome",
+				"type": "String"
+			},
+			{
+				"name": "NumCompaniesWorked",
+				"type": "String"
+			},
+			{
+				"name": "Over18",
+				"type": "String"
+			},
+			{
+				"name": "OverTime",
+				"type": "String"
+			},
+			{
+				"name": "PercentSalaryHike",
+				"type": "String"
+			},
+			{
+				"name": "PerformanceRating",
+				"type": "String"
+			},
+			{
+				"name": "StandardHours",
+				"type": "String"
+			},
+			{
+				"name": "TotalWorkingYears",
+				"type": "String"
+			},
+			{
+				"name": "TrainingTimesLastYear",
+				"type": "String"
+			},
+			{
+				"name": "WorkLifeBalance",
+				"type": "String"
+			},
+			{
+				"name": "YearsAtCompany",
+				"type": "String"
+			},
+			{
+				"name": "YearsInCurrentRole",
+				"type": "String"
+			},
+			{
+				"name": "YearsSinceLastPromotion",
+				"type": "String"
+			},
+			{
+				"name": "YearsWithCurrManager",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
